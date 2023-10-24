@@ -1,0 +1,468 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="mt-5">
+    <div class="flex justify-between container mx-auto w-[90%]">
+      <a href="">
+        <img src="img/logo.png" alt="logo here">
+      </a>
+      <div class="flex">
+        <input type="text" class="px-4 py-2 border border-gray-300 rounded-l-lg" placeholder="Search...">
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-r-lg" type="button">Search</button>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <div class="navbar  border-b border-blue-700">
+      <div class="navbar-start md:hidden">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Item 1</a></li>
+            <li>
+              <a>Parent</a>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hidden md:flex w-[95%] mx-auto">
+        <ul class=" menu menu-horizontal px-1">
+          <li class="hover:bg-blue-500 rounded-md"><a class="hover:text-white text-teal-400 font-bold">Home</a></li>
+          <li class="hover:bg-blue-500 rounded-md"><a class="hover:text-white text-teal-400 font-bold">Mobiles</a></li>
+          <li class="hover:bg-blue-500 rounded-md"><a class="hover:text-white text-teal-400 font-bold">Cameras</a></li>
+          <li class="hover:bg-blue-500 rounded-md"><a class="hover:text-white text-teal-400 font-bold">Laptops</a></li>
+          <li class="hover:bg-blue-500 rounded-md"><a class="hover:text-white text-teal-400 font-bold">Motorcycles</a>
+          </li>
+          <li class="hover:bg-blue-500 rounded-md"><a class="hover:text-white text-teal-400 font-bold">Compare</a></li>
+          <li class="hover:bg-blue-500 rounded-md"><a class="hover:text-white text-teal-400 font-bold">Reviews</a></li>
+          <li class="hover:bg-blue-500 rounded-md"><a class="hover:text-white text-teal-400 font-bold">News</a></li>
+          <li class="hover:bg-blue-500 rounded-md"><a class="hover:text-white text-teal-400 font-bold">Blog</a></li>
+          <li class="hover:bg-blue-500 rounded-md"><a class="hover:text-white text-teal-400 font-bold">বাংলা
+            </a></li>
+          <li class="hover:bg-blue-500 rounded-md"><a class="hover:text-white text-teal-400 font-bold">Showrooms</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!--mobile content part -->
+  <div class="w-[90%] mx-auto flex gap-4 mt-10 flex-col md:flex-row">
+    <div class="w-[53%] mx-auto">
+      <div class="bg-gradient-to-r from-[#2ec0de] via-[#3d3980] via-[#66c8b2] to-[#62de6e]">
+        <p class="text-white text-center py-1">Latest Mobile</p>
+      </div> <br>
+      <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mx-auto w-full">
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/mobile.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">Alldocube IPlay 50 Mini</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/mobile.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">Alldocube IPlay 50 Mini</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/mobile.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">Alldocube IPlay 50 Mini</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/mobile.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">Alldocube IPlay 50 Mini</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+      </div> <br>
+      <div class="flex justify-end items-end">
+        <button class="btn bg-blue-400 hover:text-black text-white">view all mobiles</button>
+      </div>
+    </div>
+
+    <!-- right side(brands) -->
+    <div class="w-[43%]  mx-auto">
+      <div class="bg-gradient-to-r from-[#2ec0de] via-[#3d3980] via-[#66c8b2] to-[#62de6e]">
+        <p class="text-white text-center py-1">Top Mobile Brands</p>
+      </div> <br>
+      <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mx-auto w-full">
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/Samsung.jpg" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Samsung</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/Samsung.jpg" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Samsung</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/Samsung.jpg" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Samsung</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/Samsung.jpg" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Samsung</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/Samsung.jpg" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Samsung</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/Samsung.jpg" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Samsung</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/Samsung.jpg" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Samsung</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/Samsung.jpg" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Samsung</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+      </div> <br>
+      <div class="flex justify-end items-end">
+        <button class="btn bg-blue-400 text-white hover:text-black">view all brands</button>
+      </div> 
+    </div>
+  </div>
+ 
+  <!-- camera content part -->
+  <div class="w-[90%] mx-auto flex gap-4 mt-10 flex-col md:flex-row">
+    <div class="w-[53%] mx-auto">
+      <div class="bg-gradient-to-r from-[#2ec0de] via-[#3d3980] via-[#66c8b2] to-[#62de6e]">
+        <p class="text-white text-center py-1">Latest Camera</p>
+      </div> <br>
+      <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mx-auto w-full">
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/camera.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">Sony Sonnar T FE 55mm F1.8 ZA Lens</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/camera.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">Sony Sonnar T FE 55mm F1.8 ZA Lens</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/camera.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">Sony Sonnar T FE 55mm F1.8 ZA Lens</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/camera.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">Sony Sonnar T FE 55mm F1.8 ZA Lens</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+      </div> <br>
+      <div class="flex justify-end items-end">
+        <button class="btn bg-blue-400 hover:text-black text-white">view all camera</button>
+      </div>
+    </div>
+
+    <!-- right side(brands) -->
+    <div class="w-[43%]  mx-auto">
+      <div class="bg-gradient-to-r from-[#2ec0de] via-[#3d3980] via-[#66c8b2] to-[#62de6e]">
+        <p class="text-white text-center py-1">Top camera Brands</p>
+      </div> <br>
+      <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mx-auto w-full">
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/canon.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Canon</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/canon.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Canon</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/canon.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Canon</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/canon.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Canon</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/canon.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Canon</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/canon.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Canon</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/canon.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Canon</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/canon.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Canon</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+       
+      </div> <br>
+      <div class="flex justify-end items-end">
+        <button class="btn bg-blue-400 text-white hover:text-black">view all brands</button>
+      </div> 
+    </div>
+  </div>
+
+  <!-- laptop content part -->
+  <div class="w-[90%] mx-auto flex gap-4 mt-10 flex-col md:flex-row">
+    <div class="w-[53%] mx-auto">
+      <div class="bg-gradient-to-r from-[#2ec0de] via-[#3d3980] via-[#66c8b2] to-[#62de6e]">
+        <p class="text-white text-center py-1">Latest Laptops</p>
+      </div> <br>
+      <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mx-auto w-full">
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/laptop.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">HP Commercial 14 Core i7 13th Gen</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/laptop.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">HP Commercial 14 Core i7 13th Gen</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/laptop.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">HP Commercial 14 Core i7 13th Gen</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/laptop.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">HP Commercial 14 Core i7 13th Gen</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+      </div> <br>
+      <div class="flex justify-end items-end">
+        <button class="btn bg-blue-400 hover:text-black text-white">view all laptop</button>
+      </div>
+    </div>
+
+    <!-- right side(brands) -->
+    <div class="w-[43%]  mx-auto">
+      <div class="bg-gradient-to-r from-[#2ec0de] via-[#3d3980] via-[#66c8b2] to-[#62de6e]">
+        <p class="text-white text-center py-1">Top laptop Brands</p>
+      </div> <br>
+      <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mx-auto w-full">
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/hp.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">HP</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/hp.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">HP</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/hp.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">HP</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/hp.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">HP</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/hp.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">HP</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/hp.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">HP</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/hp.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">HP</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/hp.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">HP</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+       
+      </div> <br>
+      <div class="flex justify-end items-end">
+        <button class="btn bg-blue-400 text-white hover:text-black">view all brands</button>
+      </div> 
+    </div>
+  </div>
+  <!-- bike content part -->
+  <div class="w-[90%] mx-auto flex gap-4 mt-10 flex-col md:flex-row">
+    <div class="w-[53%] mx-auto">
+      <div class="bg-gradient-to-r from-[#2ec0de] via-[#3d3980] via-[#66c8b2] to-[#62de6e]">
+        <p class="text-white text-center py-1">Latest Bike</p>
+      </div> <br>
+      <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mx-auto w-full">
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/bike.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">Suzuki Gixxer 2023</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/bike.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">Suzuki Gixxer 2023</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/bike.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">Suzuki Gixxer 2023</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+        <div class="bg-white border ring-1 w-[95%] rounded shadow p-4">
+          <img class="transition-transform transform hover:scale-110 cursor-pointer" src="img/bike.png" alt="">
+          <p class="text-center text-[12px] text-blue-800"><a href="">Suzuki Gixxer 2023</a></p>
+          <p class="text-center text-[12px]">৳ 80,000</p>
+          <p class="text-center text-[12px]"><a href="">View Details</a></p>
+        </div>
+      </div> <br>
+      <div class="flex justify-end items-end">
+        <button class="btn bg-blue-400 hover:text-black text-white">view all Bike</button>
+      </div>
+    </div>
+
+    <!-- right side(brands) -->
+    <div class="w-[43%]  mx-auto">
+      <div class="bg-gradient-to-r from-[#2ec0de] via-[#3d3980] via-[#66c8b2] to-[#62de6e]">
+        <p class="text-white text-center py-1">Top Bike Brands</p>
+      </div> <br>
+      <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mx-auto w-full">
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/suzuki.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Suzuki</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/suzuki.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Suzuki</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/suzuki.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Suzuki</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/suzuki.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Suzuki</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/suzuki.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Suzuki</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/suzuki.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Suzuki</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/suzuki.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Suzuki</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+        <div class="bg-white border ring-1 w-[100%] rounded shadow p-1">
+          <img class="cursor-pointer" src="img/suzuki.png" alt="">
+          <p class="text-center text-[18px] text-blue-800"><a href="">Suzuki</a></p>
+          <p class="text-center text-gray-400 text-[14px]">(451)</p>
+        </div>
+         
+      </div> <br>
+      <div class="flex justify-end items-end">
+        <button class="btn bg-blue-400 text-white hover:text-black">view all brands</button>
+      </div> 
+    </div>
+  </div>
+<!-- footer part -->
+<footer class="bg-gradient-to-r from-[#2ec0de] via-[#3d3980] via-[#66c8b2] to-[#62de6e] py-6 mt-10">
+  <div class="w-90% mx-auto">
+    <ul class="flex justify-center flex-col md:flex-row gap-4 items-center md:items-start">
+      <li><a class="text-gray-500 hover:text-white md:font-bold" href="">About Us</a></li>
+      <li class="text-gray-500 font-bold hidden md:block"> | </li>
+      <li><a class="text-gray-500 hover:text-white md:font-bold" href="">Privacy policy</a></li>
+      <li class="text-gray-500 font-bold hidden md:block"> | </li>
+      <li><a class="text-gray-500 hover:text-white md:font-bold" href="">Terms and condition</a></li>
+      <li class="text-gray-500 font-bold hidden md:block"> | </li>
+      <li><a class="text-gray-500 hover:text-white md:font-bold" href="">Disclaimer</a></li>
+      <li class="text-gray-500 font-bold hidden md:block"> | </li>
+      <li><a class="text-gray-500 hover:text-white md:font-bold" href="">Contact us</a></li>
+    </ul> <br>
+    <div class="flex flex-col md:flex-row justify-between px-10">
+      <p class="md:text-2xl text-white">Copyright © 2023 ClassyPrice | All Right Reserved</p>
+      <div class="flex gap-5">
+        <a class="text-2xl text-black hover:text-white" href="https://www.facebook.com">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a class="text-2xl text-black hover:text-white " href="https://twitter.com">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="text-2xl text-black hover:text-white" href="https://www.instagram.com">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="text-2xl text-black hover:text-white" href="https://www.youtube.com">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
