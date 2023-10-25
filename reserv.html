@@ -1,0 +1,66 @@
+ 
+ 
+  
+   <div id="content">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+<style>
+ .allbrands{
+     background-color:blue;
+     color:#fff;
+ }
+ .hidden {
+ display: none;
+}
+.brandgrid .cardBox {
+display: none;
+}
+
+.brandgrid .cardBox:nth-child(-n+12) {
+display: block; /* Show the first 12 cards (3 rows) */
+}
+.productgrid .productdBox {
+display: none;
+}
+
+.productgrid .productdBox:nth-child(-n+12) {
+display: block; /* Show the first 12 cards (3 rows) */
+}
+</style>
+ 
+
+<!--all scripts-->
+<script>
+document.getElementById("viewAllButton").addEventListener("click", function () {
+const cardBoxes = document.querySelectorAll(".brandgrid .cardBox");
+
+cardBoxes.forEach(function (cardBox) {
+ cardBox.style.display = "block"; // Show all card boxes
+});
+
+this.style.display = "none"; // Hide the "View All" button
+});
+
+</script>
+
+
+<!--for all products-->
+<script>
+document.getElementById("viewAllProduct").addEventListener("click", function () {
+const procardBoxes = document.querySelectorAll(".productgrid .productdBox");
+
+procardBoxes.forEach(function (productdBox) {
+ productdBox.style.display = "block"; // Show all card boxes
+});
+
+this.style.display = "none"; // Hide the "View All" button
+});
+
+</script>
+
+</div>
+<div class="clearfix"></div>
+
+</html>

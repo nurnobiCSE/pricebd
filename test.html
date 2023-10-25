@@ -1,0 +1,56 @@
+<div id="content">
+    <div id="products">
+        <div id="load_area" class="row">
+
+            <div class="w-[90%] mx-auto flex gap-4 mt-10 flex-col md:flex-row"">
+                <div class="w-[53%] mx-auto">
+                  <div class="bg-gradient-to-r from-[#2ec0de] via-[#3d3980] via-[#66c8b2] to-[#62de6e]">
+                    <p class="text-white text-center py-1">Latest Products</p>
+                  </div> <br>
+                  <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mx-auto w-full productgrid">
+                       <?php
+                            $result = get_result('shop_products','product_id,product_name,product_slug,product_price,product_photo',"status ='1' $cond ",$sort,$limit);
+                            foreach ($result as $r) {
+                        ?>
+                    <div class="bg-white border ring-1 w-[95%] rounded shadow p-4 productdBox">
+                        <a href="<?php echo site_url('product',$r['product_slug']); ?>" title="<?php echo $r['product_name']; ?>">
+                      <img class="transition-transform transform hover:scale-110 cursor-pointer" src="<?php echo site_url(); ?>/images/products/<?php echo chop($r['product_photo']); ?>" alt="">
+                      <p class="text-center text-[12px] text-blue-800"><a href=""><?php echo $r['product_name']; ?></a></p>
+                        </a>
+                      <p class="text-center text-[12px]">Tk <?php echo number_format($r['product_price'],2); ?></p>
+                      <p class="text-center text-[12px]"><a href="<?php echo site_url('product',$r['product_slug']); ?>">View Details</a></p>
+                    </div>
+                      <?php } ?>
+                  </div> <br>
+                  <div class="flex justify-end items-end">
+                    <button class="btn  hover:text-black text-white allbrands" id="viewAllProduct">view all products</button>
+                  </div>
+                </div>
+            
+                <!-- right side(brands) -->
+                <div class="w-[43%]  mx-auto">
+                  <div class="bg-gradient-to-r from-[#2ec0de] via-[#3d3980] via-[#66c8b2] to-[#62de6e]">
+                    <p class="text-white text-center py-1">Top Brands</p>
+                  </div> <br>
+                  <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mx-auto w-full brandgrid">
+                          <?php
+                            $result = get_result('shop_brands','brand_id,brand_name,brand_slug,brand_logo',"status ='1'",'brand_name ASC');
+                            foreach ($result as $r) {
+                        ?>
+                    <div class="bg-white border ring-1 w-[100%] rounded shadow p-1 cardBox">
+                      <img class="cursor-pointer" src="<?php echo site_url(); ?>/images/brands/<?php echo $r['brand_logo']; ?>" alt="<?php echo $r['brand_name']; ?>">
+                      <p class="text-center text-[18px] text-blue-800"><a href=""><?php echo $r['brand_name']; ?></a></p>
+                      <p class="text-center text-gray-400 text-[14px]"><?php echo get_total("shop_products","product_id","brand_id=".$r['brand_id']); ?></p>
+                    </div>
+                    <?php } ?>
+                    
+                  </div> <br>
+                  <div class="flex justify-end items-end">
+                    <button class="btn allbrands text-white hover:text-black text-xl" id="viewAllButton">view all brands</button>
+                  </div> 
+                </div>
+        </div>
+
+    </div>
+</div>
+<div class="clearfix"></div>
